@@ -13,6 +13,7 @@
 		4DBC324C1ED6B690000ACE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC324A1ED6B690000ACE1B /* Main.storyboard */; };
 		4DBC324E1ED6B690000ACE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC324D1ED6B690000ACE1B /* Assets.xcassets */; };
 		4DBC32511ED6B690000ACE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBC324F1ED6B690000ACE1B /* LaunchScreen.storyboard */; };
+		4DBC325B1ED6B6FC000ACE1B /* StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBC325A1ED6B6FC000ACE1B /* StarRatingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4DBC324D1ED6B690000ACE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DBC32501ED6B690000ACE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DBC32521ED6B690000ACE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DBC32591ED6B6FC000ACE1B /* StarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarRatingView.h; sourceTree = "<group>"; };
+		4DBC325A1ED6B6FC000ACE1B /* StarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarRatingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				4DBC32451ED6B690000ACE1B /* AppDelegate.m */,
 				4DBC32471ED6B690000ACE1B /* ViewController.h */,
 				4DBC32481ED6B690000ACE1B /* ViewController.m */,
+				4DBC32581ED6B6BA000ACE1B /* StarRatingView */,
 				4DBC324A1ED6B690000ACE1B /* Main.storyboard */,
 				4DBC324D1ED6B690000ACE1B /* Assets.xcassets */,
 				4DBC324F1ED6B690000ACE1B /* LaunchScreen.storyboard */,
@@ -77,6 +81,15 @@
 				4DBC32421ED6B690000ACE1B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DBC32581ED6B6BA000ACE1B /* StarRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				4DBC32591ED6B6FC000ACE1B /* StarRatingView.h */,
+				4DBC325A1ED6B6FC000ACE1B /* StarRatingView.m */,
+			);
+			path = StarRatingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DBC32491ED6B690000ACE1B /* ViewController.m in Sources */,
+				4DBC325B1ED6B6FC000ACE1B /* StarRatingView.m in Sources */,
 				4DBC32461ED6B690000ACE1B /* AppDelegate.m in Sources */,
 				4DBC32431ED6B690000ACE1B /* main.m in Sources */,
 			);

@@ -7,18 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "StarRatingView.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<HYStarRatingDelegate>
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    StarRatingView *starView = [[StarRatingView alloc] initWithFrame:CGRectMake(60, 120, 270, 30) rateStyle:RateStyleWholeStar];
+    starView.rateStyle = RateStyleOptional;
+    starView.delegate = self;
+    [self.view addSubview:starView];
 }
 
+- (void)starRatingWithScore:(CGFloat)score{
+    
+    NSLog(@"评分: %f",score);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
